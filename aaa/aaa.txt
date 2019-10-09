@@ -1,0 +1,7 @@
+PID: 193301
+
+For SASS:
+$sass Development\SASS\style.scss Publish\style.css
+
+For LESS:
+$lessc Development\LESS\style.less Publish\style.css

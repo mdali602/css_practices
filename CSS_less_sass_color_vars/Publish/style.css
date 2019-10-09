@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel Regular'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v10/MwQ5bhbm2POE2V9BOA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Warnes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Warnes'), local('Warnes-Regular'), url(https://fonts.gstatic.com/s/warnes/v9/pONn1hc0GsW6sW5-oSqy.ttf) format('truetype');
+}
+html {
+  background: #000 url(images/city.jpg) no-repeat center bottom fixed;
+  background-size: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+}
+article {
+  margin: 50px 50px;
+  padding: 20px 45px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
+  border: 2px solid #fff;
+  border-radius: 34px;
+}
+p {
+  margin: 0 0 1em 0;
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+h1 {
+  font-family: 'Warnes', cursive;
+  font-weight: normal;
+  font-size: 3.7em;
+  line-height: 1.2em;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+.neon {
+  text-shadow: -2px -2px 10px #fff, 2px 2px 20px #fff, 0 0 40px #00b4ff, 0 0 70px #00b4ff, 0 0 80px #00b4ff, 0 0 100px #00b4ff;
+}
