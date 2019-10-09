@@ -21,7 +21,6 @@ header {
 	background: #666764 url(images/banner.jpg) no-repeat 0 0;
 	background-color: #35201b;
 	box-shadow: 0px 2px 10px rgba(0,0,0,.3);
-	//border-bottom: 1px solid #aaa; 
 }
 
 header h1 {
@@ -37,7 +36,7 @@ header h1 {
 main { margin: 35px 25px; }
 
 article {
-	width: calc(100% - 240px);
+	width: ~'calc(100% - 240px)';
 	float: left;
 }
 			
@@ -63,15 +62,28 @@ h3 {
 
 p { margin: 0 0 .7em 0; }
 
-@mixin button_normal($text, $background, $border) {
-	color: $text;
+
+/* a.btn {
 	display: inline-block;
 	padding: 4px 16px 2px 16px;	
 	border-radius: 8px;
 	font-size: .9em;
-	border: 1px solid $border;
+	border: 1px solid #fff;
 	text-decoration: none;
-	background-color: $background;
+	background-color: #fff;
+}
+ */
+
+
+.button_normal(@text, @background, @border) {
+	color: @text;
+	display: inline-block;
+	padding: 4px 16px 2px 16px;	
+	border-radius: 8px;
+	font-size: .9em;
+	border: 1px solid @border;
+	text-decoration: none;
+	background-color: @background;
 
 	&::after {
 		content: '\25BA';
@@ -81,27 +93,26 @@ p { margin: 0 0 .7em 0; }
 	}
 }
 
-@mixin button_hover($text, $background) {
-	color: $text;
-	background: $background;
+.button_hover(@text, @background) {
+	color: @text;
+	background: @background;
 }
 
 article a.btn {
-	@include button_normal(#fff, #bcc428, #bcc428);
+	.button_normal(#fff, #8cc428, #8cc428);
 
 	&:hover {
-		@include button_hover(#000, #fff);
+		.button_hover(#000, #fff);
 	}
 }
 
 aside a.btn {
-	@include button_normal(#72b003, #fff, #fff);
+	.button_normal(#72b003, #fff, #fff);
 	
 	&:hover {
-		@include button_hover(#fff, rgba(255,255,255,.3));
+		.button_hover(#fff, rgba(255,255,255,.3));
 	}
 }
-
 
 
 
