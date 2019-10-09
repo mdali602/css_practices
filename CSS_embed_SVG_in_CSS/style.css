@@ -1,0 +1,79 @@
+/*  CSS Document  */
+
+/*  This file was provided as part of a weekly web design tutorial series.
+	Sign-up for our newsletter, at http://codifydesign.com, to be notified
+	about each new episode of Creating Web Media
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:900" rel="stylesheet');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #d1dce2;
+	font-family:'Roboto Slab', serif;
+	font-size: 16px;
+	color: #2f2f2a;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+header {
+	margin: 0;
+	padding: 1px 0;
+	background: #000 url(images/banner.jpg) no-repeat center 0;
+	background-size: cover;
+	height: 130px;
+	position: relative;
+	overflow: hidden;
+}
+
+header h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 5em;
+	line-height: 53px;
+	letter-spacing: 8px; 
+	color: rgba(200, 220, 234, 0.75);
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 40px;
+	bottom: -2px;
+}
+
+article {
+	margin: 20px 40px;
+	line-height: 1.5em;
+}
+
+
+nav {
+	background-color: #597994;
+	padding: 15px 15px 5px 40px;
+}
+
+nav label {
+	display: block;
+	/* background: url('images/menu.svg') no-repeat 0 2px; */
+	background: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%0A%09%3Ctitle%3Emenu%3C%2Ftitle%3E%0A%09%20%3Cdefs%3E%0A%09%09%3Cstyle%20type%3D%22text%2Fcss%22%3E%3C!%5BCDATA%5B%0A%09%09%09rect%20%7B%20fill%3A%20%23fff%3B%20%7D%0A%09%09%5D%5D%3E%3C%2Fstyle%3E%0A%09%3C%2Fdefs%3E%0A%09%3Crect%20x%3D%2211.375%22%20y%3D%2215%22%20width%3D%2278.75%22%20height%3D%2214.2%22%20%2F%3E%0A%09%3Crect%20x%3D%2211.375%22%20y%3D%2243.8%22%20width%3D%2278.75%22%20height%3D%2212.4%22%20%2F%3E%0A%09%3Crect%20x%3D%2211.375%22%20y%3D%2270.8%22%20width%3D%2278.75%22%20height%3D%2214.2%22%20%2F%3E%0A%3C%2Fsvg%3E') no-repeat 0 2px;
+	background-size: 24px auto;
+	padding: 2px 0 10px 33px;
+	color: #fff;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
